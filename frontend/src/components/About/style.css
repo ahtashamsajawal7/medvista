@@ -1,0 +1,1113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ############### Utiliti classes ########### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-primary{
+    color: #fff;
+    background: #33b4ff;
+}
+
+/* ############# NAVBAR Styling For Desktop ############ */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    /* box-shadow: 0px 5px 10px 0px #aaa; */
+    position: fixed;
+    width: 100%;
+    background: #000000;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+}
+.logo{
+    order: 1;
+    color: #000000;
+    font-size: 2.5rem;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    /* padding-top: 10px; */
+    margin-top: 13px;
+}
+.navbar a{
+    color: #d4d4d4;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+.navbar a:hover{
+    color: #33b4ff;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* ############# Showcase styling ############# */
+
+.showcase-area{
+    height: 90vh;
+    background: url("./images/pexels-shkrabaanthony-6749778-removebg-preview.png");
+    background-color: #0071b3;
+    background-size: contain;
+    background-position: 10px 30px;
+    background-repeat: no-repeat;
+}
+
+.showcase-area p{
+    color: rgb(220, 220, 220);
+}
+
+.showcase-area h1{
+    color: rgb(220, 220, 220);
+    font-size: 30px;
+}
+
+.showcase-container{
+    display: flex;
+    /* margin-top: 30px; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: flex-end;
+    /* height: 100%; */
+    /* font-size: 1.6rem; */
+}
+
+/* Alternatives Card Styles */
+.alternatives-card {
+    width: 85%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.alternatives-card h3 {
+    font-size: 22px;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.input-field, .input-file {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.alternative-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2c5282;
+}
+
+/* Alternatives Result Styles */
+.alternatives-result {
+    margin-top: 20px;
+}
+
+.alternative-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 90px;
+    /* border: 1px solid red; */
+    height: 100%;
+    margin-top: 100px;
+    text-align: center;
+    /* margin-right: 15px; */
+    font-size: 1.6rem;
+    width: 600px;
+    /* height: 280px; */
+}
+
+.hero-btn{
+    color: white;
+    background-color: black;
+}
+
+.right-side{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+/* ################ About US ###################### */
+
+#about{
+    padding: 50px 0px;
+    background: #f5f5f7;
+}
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+#about h2{
+    font-size: 3.2rem;
+}
+#about p{
+    font-size: 1.6rem;
+    color: #555;
+}
+#about .small{
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translate(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    align-self: center;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+@keyframes about-text-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+.about-img img{
+    display: block;
+    height: 400px;
+    /* max-width: 100%; */
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ############ Exercises ################ */
+
+#medicine{
+    padding: 5rem 0 10rem 0;
+}
+.medicine-type{
+    position: relative;
+}
+#medicine h2{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 3rem;
+}
+.medicine-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.medicine-container img{
+    display: block;
+    width: 350px;
+    margin: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+}
+
+.img-container{
+    position: relative;
+    width: 350px;
+}
+.img-content{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out,
+                top 0.3s ease-in-out;
+}
+
+.img-content h3{
+    color: #fff;
+    font-size: 3rem;
+}
+.img-content {
+    font-size: 1.2rem;
+}
+
+.img-container::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000be;
+    opacity: 0;
+    z-index: 1;
+}
+.img-container:hover::after{
+    opacity: 1;
+}
+
+.img-container:hover .img-content{
+    opacity: 1;
+    top: 50%;
+}
+
+/* ====================== Calender ======================= */
+
+#calendar {
+    padding: 50px 20px;
+    background: #FFFFFF;
+    color: #fff;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ margin: auto;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #E9EBEB 0%, #E91E63 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.calendar-text h2 {
+    color: #000;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.calendar-text p {
+    color: #3f3f3f;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.calendar-box {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.calendar-table th,
+.calendar-table td {
+    width: 14.28%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+
+.calendar-table th {
+    background-color: #E91E63;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.calendar-table td {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.calendar-table td:hover {
+    background-color: #E91E63;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+.calendar-table td:active {
+    background-color: #D81B60;
+    transform: scale(0.95);
+}
+
+/* ====================== Diet Section =================== */
+
+
+#diet-section{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.diet-text{
+    width: 25%;
+    /* border: 1px solid green; */
+}
+
+.diet-heading{
+    font-size: 13px;
+    color: rgb(104, 104, 104);
+}
+
+.diet-boxes{
+    width: 75%;
+    /* border: 1px solid black; */
+
+}
+
+.diet-row1{
+    display: flex;
+    /* border: 3px solid red; */
+    justify-content: space-around;
+    /* margin-bottom: 30px; */
+}
+
+.diet-row2{
+    display: flex;
+    /* border: 3px solid purple; */
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.boxx{
+    /* border: 1px solid rgb(129, 129, 129); */
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+    transition: transform 0.2s ease-in-out;
+}
+
+.boxx:hover {
+    transform: scale(1.05);
+}
+
+
+/* =================== Download Section ================*/
+
+.showcase_{
+    background-color: #f5f5f7;
+    padding: 50px 0px;
+    /* border: 3px solid red; */
+}
+
+.container_{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    /* border: 3px solid red; */
+    /* margin: 0px 170px; */
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.row_{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0px 0px 20px 0px #aaa;
+    border-radius: 20px;
+}
+
+.img-box_{
+    width: 40%;
+    height: 300px;
+    /* border: 2px solid red; */
+}
+
+.text-box_{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* border: 2px solid green; */
+    width: 60%;
+    height: 300px;
+    padding: 50px 15px;
+}
+
+.text-box_ h2{
+    width: 25%;
+    border-right: 1px solid black;
+    margin-right: 5px;
+    /* padding-top: 50px; */
+    align-self: center;
+    /* border: 1px solid black; */
+}
+
+.text-box_ p{
+    width: 50%;
+    padding-left: 5px;
+    /* padding-top: 50px; */
+    align-self: center;
+    /* border: 1px solid red; */
+}
+
+.text-box_ .download-links_{
+    width: 25%;
+    /* border: 1px solid green; */
+}
+
+.img-box_ img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+    border-radius: 20px 0px 0px 20px;
+}
+
+.download_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code_ img{
+    height: 100px;
+    width: 100px;
+}
+
+.play-store_ img{
+    width: 110px;
+}
+
+.apple-store_ img{
+    width: 110px;
+}
+
+/* ==================== Testimonials ================= */
+
+#testimonials{
+    padding: 5rem 0rem;
+    background: #f1f1f1;
+}
+.testimonial-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #555;
+}
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+.testimonial-container .checked{
+    color: #ff9529;
+}
+.testimonial-box .testimonail-text{
+    margin: 1rem 0;
+    color: #444;
+}
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
+.customer-photo img{
+    display: block;
+    width: 100px;
+    /* margin-top: 500px; */
+    /* padding-top: 100px; */
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+/* ###################### Blogs Styling ################## */
+
+
+#blogs {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.blog-heading {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 3rem;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.blog-card a{
+    text-decoration: none;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.blog-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #555;
+}
+
+.blog-card p {
+    font-size: 1em;
+    color: #777;
+    padding: 0 15px 15px;
+    text-align: left;
+}
+
+
+/* ################### Contact us ################# */
+#contact {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E9EBEB; /* Light gray background */
+}
+
+.contact-card {
+    display: flex;
+    background-color: #FFFFFF; /* White background for the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.contact-image {
+    flex: 1;
+    background-color: #E91E63; /* Bright pink background for the image section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-form-container {
+    flex: 1.5;
+    padding: 40px;
+}
+
+.contact-heading {
+    font-size: 2em;
+    color: #000000; /* Bright pink for the heading */
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E9EBEB; /* Light gray */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #E91E63; /* Bright pink focus state */
+    outline: none;
+}
+
+button {
+    background-color: #E91E63; /* Bright pink button */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D81B60; /* Slightly darker pink on hover */
+}
+
+
+/* ################################### Footer Styling ####################### */
+
+.footer{
+    background: #000000;
+    padding: 70px 0px;
+    /* margin-top: 100px; */
+}
+
+/* 0xFFE9EBEB 0xFFE91E63 */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(239, 239, 239);
+    justify-content: space-between;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0px 15px;
+}
+
+.footer-col h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer-col h4.footer-logo img{
+width: 70px;
+height: 70px;
+}
+
+.footer-col li{
+    line-height: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer-input{
+    padding: 7px 15px;
+    margin-top: 12px;
+    background: transparent;
+    color: white;
+    border: 1.5px solid rgb(225, 225, 225);
+    border-radius: 3px;
+}
+
+.footer-input::placeholder{
+    color: #fff;
+}
+
+.logo-text{
+    font-size: 1.3rem;
+}
+
+.qr-code img{
+    width: 90px;
+    height: 90px;
+}
+
+.download{
+    display: flex;
+    justify-content: space-between;
+}
+
+.playstore-icon{
+    width: 120px;
+    /* border-radius: 10px; */
+}
+
+.store-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.footer-col .social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    color: white;
+    height: 40px;
+    width: 30px;
+    font-size: 23px;
+    margin-top: 20px;
+    /* color: transparent; */
+    /* border: 2px solid currentColor; */
+}
+
+.end-footer{
+    background: #33b4ff;
+    height: 70px;
+    border-top: 1px solid rgba(183, 183, 183, 0.909);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-footer p{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.813);
+}
+
+/* ################### Media quries #################### */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Hide menu items by default on mobile */
+    }
+
+    .navbar input[type='checkbox']:checked ~ .menu-items {
+        display: flex; /* Show menu items when checkbox is checked */
+        color: #000;
+    }
+
+    .logo img {
+        margin-top: 0;
+    }
+
+    .showcase-area {
+        height: 50vh;
+        background-position: center;
+    }
+
+    .showcase-area h1 {
+        font-size: 2rem;
+    }
+
+    .about-wrapper {
+        padding: 10px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1.4rem;
+    }
+
+    .medicine-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .calendar-container {
+        padding: 10px;
+    }
+
+    .calendar-text h2 {
+        font-size: 2rem;
+    }
+
+    .calendar-box {
+        margin-top: 20px;
+    }
+
+    #diet-section{
+        flex-direction: column;
+    }
+    .diet-row1{
+        flex-direction: column;
+    }
+    .diet-row2{
+        flex-direction: column;
+    }
+    .boxx{
+        text-align: center;
+    }
+
+    .diet-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .boxx {
+        width: 100%;
+    }
+
+    .blog-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    .contact-heading {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .footer {
+        padding: 30px 0px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .end-footer p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+
+    .container{
+        max-width: 350px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .navbar-container {
+        padding: 10px 15px;
+    }
+
+    .menu-items li {
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+    }
+
+    .showcase-area {
+        height: 40vh;
+    }
+
+    .about-text, .about-img {
+        padding: 10px;
+    }
+
+    .medicine-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .medicine-type{
+        margin: 10px 0px;
+    }
+
+    .calendar-container {
+        padding: 10px;
+    }
+
+    #diet-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diet-row1{
+        flex-direction: column;
+    }
+    .diet-row2{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .boxx{
+        text-align: center;
+        width: 200px;
+        height: 150px;
+        margin: 10px 0px;
+    }
+
+    .diet-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .blog-card {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 20px 0px;
+    }
+
+    .footer-col ul li {
+        font-size: 1.2rem;
+    }
+
+    .footer-col h4 {
+        font-size: 1.4rem;
+    }
+
+    .end-footer p {
+        font-size: 1.2rem;
+    }
+}

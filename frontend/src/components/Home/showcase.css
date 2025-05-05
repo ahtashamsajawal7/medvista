@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ############### Utiliti classes ########### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-primary{
+    color: #fff;
+    background: #33b4ff;
+}
+
+
+/* ############### Show case styling ########### */
+
+/* .showcase-area{
+    height: 90vh;
+    background: url("../../assets/assets/How_to_Create__5_-removebg.png");
+    background-color: #0071b3;
+    background-size: contain;
+    background-position: 10px 30px;
+    background-repeat: no-repeat;
+} */
+
+.showcase-area p{
+    color: rgb(220, 220, 220);
+}
+
+.showcase-area h1{
+    color: rgb(220, 220, 220);
+    font-size: 30px;
+}
+
+.forImage{
+    display: flex;
+    /* border: 2px solid red; */
+    background: url("../../assets/assets/How_to_Create__5_-removebg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin-top: 60px; */
+    height: 90vh;
+    /* padding: 20px 0px 20px 0px; */
+    margin: 0px 300px 30px 0px;
+}
+
+.showcase-container{
+    display: flex;
+    /* margin-top: 30px; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: flex-end;
+    /* height: 100%; */
+    /* font-size: 1.6rem; */
+}
+
+/* Alternatives Card Styles */
+.alternatives-card {
+    width: 85%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.alternatives-card h3 {
+    font-size: 22px;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.input-field, .input-file {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.alternative-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2c5282;
+}
+
+/* Alternatives Result Styles */
+.alternatives-result {
+    margin-top: 20px;
+}
+
+.alternative-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-side{
+    /* background: url("../../assets/assets/How_to_Create__5_-removebg.png"); */
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 90px;
+    /* border: 1px solid red; */
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 400px;
+    text-align: center;
+    /* margin-right: 15px; */
+    font-size: 1.6rem;
+    width: 400px;
+    /* height: 280px; */
+    /* border: 2px solid red; */
+    margin-bottom: 40px;
+}
+
+.hero-btn{
+    color: white;
+    background-color: black;
+}
+
+.right-side{
+    margin-top: 80px;
+    margin-left: 30px;
+    /* border: 2px solid yellow; */
+    /* width: 300px; */
+}

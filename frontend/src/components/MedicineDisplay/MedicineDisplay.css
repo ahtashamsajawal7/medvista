@@ -1,0 +1,106 @@
+/* Global styles for consistency */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Medicine display section */
+.medicine-display {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.medicine-display h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.medicine-display-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Medicine card styling */
+.medicine-item-wrapper {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* Ensure content doesn't overflow outside the container */
+  position: relative;
+}
+
+
+/* Donation Tag Styling */
+.donation-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  z-index: 2; /* Ensure it appears on top */
+}
+
+.medicine-item-wrapper:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.medicine-item-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.medicine-item-details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+
+.medicine-item-details p {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.medicine-item-details .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6d6d6d;
+  margin: 10px 0;
+}
+
+.medicine-item-details button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.medicine-item-details button:hover {
+  background-color: #0056b3;
+}

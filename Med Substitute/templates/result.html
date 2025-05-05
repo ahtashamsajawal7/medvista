@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(148, 202, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #0071b3;
+        }
+        .medicines {
+            background-color:rgb(200, 227, 255);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Analysis Complete</h1>
+        <p>The following medicines were found in the prescription:</p>
+        <div class="medicines">
+            <pre>{{ medicines }}</pre>
+        </div>
+        <br>
+        <a href="{{ url_for('index') }}" style="text-decoration: none; color: #0071b3;">Upload another prescription</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    background-color: black;
+}
+
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .profile{
+    width: 40px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  .navbar-right {
+    position: relative; /* For positioning the dropdown */
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Dropdown container for logout button */
+  .logout-dropdown {
+    position: absolute;
+    top: 50px; /* Adjust based on your navbar height */
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+  }
+  
+  /* Styling for logout button */
+  .logout-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .logout-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  .logout-btn:focus {
+    outline: none; /* Remove the outline on button focus */
+  }
+  
